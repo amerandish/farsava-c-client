@@ -9,7 +9,7 @@ size_t writeDataCallback(void *buffer, size_t size, size_t nmemb, void *userp);
 apiClient_t *apiClient_create() {
     curl_global_init(CURL_GLOBAL_ALL);
     apiClient_t *apiClient = malloc(sizeof(apiClient_t));
-    apiClient->basePath = "https://api.farsava.ir/v1";
+    apiClient->basePath = "https://api.amerandish.com/v1";
     apiClient->dataReceived = NULL;
     apiClient->response_code = 0;
     apiClient->username = NULL;
